@@ -1,0 +1,32 @@
+h2 {
+    color:blue;
+    font-size: 16px;
+}
+
+/* #subtitulo {
+    color:red;
+}
+usando ID para selecionar apenas um h2, por exemplo.*/
+
+/* .texto {
+        color:green;
+}
+usando class para selecionar todas as tags que contém a classe texto*/
+
+img {
+    width: 100px;
+}
+
+a {
+    color:green;
+}
+li {
+    font-weight: bold;
+}
+
+
+/* #subtitulo,
+.texto{
+    font-size: 12px;
+}
+usando multiplas classes e ids com as mesmas estilizações*/
