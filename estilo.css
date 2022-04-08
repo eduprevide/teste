@@ -1,8 +1,25 @@
+#titulo {
+    background-color: rgb(30, 180, 43);
+}
+
 h2 {
     color:blue;
     font-size: 16px;
 }
 
+div{
+    background-color: #0f0;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 5px solid rgb(7, 78, 7);
+}
+
+p{
+    background-color: #00f;
+    border-radius: 5px;
+    /*border: 5px solid #00f;*/
+}
 /* #subtitulo {
     color:red;
 }
