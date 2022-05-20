@@ -25,3 +25,16 @@ body{
     width: inherit;
     max-width: 450px;
 }
+
+.link{
+    color: green;
+    font-size: 20px;
+}
+
+.link:hover{
+    color: red;
+}
+
+.link:visited{
+    color:purple
+}

@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 20px; /*se nao for especificado, o tamanho padrao é 16px*/
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    width: calc(100% -20px);
+    height: 200px;
+    background-color: #ccc;
+    color: #ff0000;
+}
+
+.container strong{
+    color: #0000ff;
+}
+
+.box{
+    font-size: 1rem;
+}
+
+.box-interno{
+    width: 10rem; /*tamanho relativo ao tamanho da root font, 1rem=tamanho da fonte raiz, nesse caso 1rem=20px, especificado na tag html*/
+    height: 10rem; 
+    background-color: #999;
+}
+
+.box2{
+    background-color: #999;
+    width: 50%; /* nao é 50% da tela, é 50% do espaço disponivel, normalmente relativo ao tamanho do espaço da tag superior a essa*/
+    height: 100vh; /* 100% da height da tela / vw seria o width*/
+}
+
+.box-interno2{
+    width: 50%;
+    height: 50%;
+    background-color: #333;
+}
+
+.box3{
+    font-size: 15px;
+    color: blue;
+}
+
+h1{
+    font-size: 30px;
+    color: red;
+}
+
+.box3 h1{
+    font-size: inherit;
+    color: inherit; /* h1 de dentro do box3 esta herdando os elementos da classe box3*/
+}

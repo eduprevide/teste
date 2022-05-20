@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 50px;
+    font-size: 17px;
+}
+
+p{
+    color:blue;
+    font-weight:normal;
+    font-family: 'Square Peg';
+    text-align: left;
+    font-size:14px;
+    /**text-transform: uppercase;
+    letter-spacing: 4px;
+    word-spacing:20px;*/
+    line-height: 24px;
+    text-shadow: 0px 2px 3px black;/**sombra pra direita, baixo, esfumaçamento e cor*/
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+table{
+    width: 40%;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 10px;
+}
+ table thead{
+     background-color: #ccc;
+     text-align: left;
+ }
+
+ tbody td:hover{
+     background-color: green;
+     border: 1px solid red;
+ }
+
+ tbody tr:nth-child(even){
+     background-color: #ccc;
+ }
+
+ label{
+    display: block; /* faz com que cada item fique em uma linha, padrão que vem é o inline onde fica tudo na mesma linha*/
+    margin-bottom: 20px;
+}
+
+input[type=text], textarea, select{
+    padding: 10px;
+    width: 500px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    outline: 0px; /* remove a borda quando selecionado*/
+    margin-top: 5px;
+}
+
+textarea{
+    height: 200px;
+    resize: none;
+}
+
+/*.termoslink{
+    color: black;
+    text-decoration: none;
+}
+
+.termoslink:hover{
+    text-decoration: underline;
+}
+tatica scamaz para esconder o link de termos de uso*/
+
+button{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+}
+
+button:hover{
+    background-color: #ddd;
+}
+
+fieldset{
+    background-color: #eee;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+}
+
+legend{
+    background-color: #ccc;
+    color: black;
+    padding: 5px;
+}

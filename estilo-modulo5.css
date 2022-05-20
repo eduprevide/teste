@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    background-color: green;
+    border: 0;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+}
+
+/*@media (aspect-ratio: 1/1){
+    body{
+        background-color: teal;
+    }
+} raramente usado*/
+
+@media(orientation: landscape){
+    body{
+        flex-direction: row;
+    }
+}
+
+@media(orientation: portrait){
+    body{
+        flex-direction: column;
+    }
+}
+
+/*@media only print{                @media only screen                      @media all
+    h1{
+        font-size: 16px;
+        font-weight: normal;
+    }
+    img{
+        display: none; retira a imagem da impressao
+    }
+}  altera as propriedades escolhidas para impressao*/
+
+@media (min-width: 1000px) {
+    body{
+        background-color: blue;
+    }
+    h1{
+        font-size: 60px;
+    }
+}
+
+@media (min-width:700px) and (max-width: 1000px){
+    body{
+        background-color: purple;
+    }
+    h1{
+        font-size: 50px;
+    }
+}
+
+@media (min-width:300px) and (max-width:700px) {
+    body{
+        background-color: red;
+    }
+    h1{
+        font-size: 40px;
+    }
+}
+
+@media (max-width:300px){
+    h1{
+        font-size: 24px;
+    }
+}
+
+#redimensao {
+    width: 400px;
+    height: 400px;
+    object-fit: cover; /* redimensiona e corta parte da imagem para caber no tamanho fixo sem distorcer */
+}
